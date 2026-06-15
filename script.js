@@ -1,15 +1,24 @@
 function showMessage() {
-    alert("Thank you for visiting my website!");
+    var box = document.getElementById("message-box");
+    box.textContent = "Hello! Thanks for visiting my Week 1 internship website! 👋";
 }
 
-let colors = ["white", "lightblue", "lightgreen", "lightyellow", "lavender", "mistyrose"];
-let currentColor = 0;
+var colors = ["white", "lightblue", "lightgreen", "lightyellow", "lavender", "mistyrose"];
+var currentColor = 0;
 
 function changeColor() {
+    var box = document.getElementById("message-box");
     document.body.style.backgroundColor = colors[currentColor];
+    box.textContent = "Background changed to: " + colors[currentColor];
     currentColor++;
-
     if (currentColor >= colors.length) {
         currentColor = 0;
     }
+}
+
+function resetColor() {
+    document.body.style.backgroundColor = "white";
+    currentColor = 0;
+    var box = document.getElementById("message-box");
+    box.textContent = "Background reset to white.";
 }

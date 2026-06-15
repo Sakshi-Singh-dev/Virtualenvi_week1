@@ -1,82 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sakshi's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Singh – Web Dev Intern</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Sakshi Singh</h1>
+    <nav>
+        <span class="nav-name">Sakshi Singh</span>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#learned">Week 1</a>
+            <a href="#skills">Skills</a>
+            <a href="#interactive">Demo</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-    <p class="role">Web Development & Hosting Intern</p>
+    <div class="hero">
+        <h1>Sakshi Singh</h1>
+        <p class="role">Web Development &amp; Hosting Intern</p>
+        <p class="subtitle">Virtualenvi · June 2026 · B.Tech CSE (2nd Year)</p>
+    </div>
 
-    <h2>About Me</h2>
-    <p>
-        I am a B.Tech CSE student learning web development and exploring new technologies.
-    </p>
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a B.Tech CSE student learning web development and exploring new technologies.
+            This week I built my first website from scratch and deployed it live using GitHub Pages.
+        </p>
+    </div>
+
     <hr>
 
-<h2>Skills</h2>
+    <div id="learned" class="section">
+        <h2>What I Learned This Week</h2>
+        <p>These are the main topics I covered during Week 1 of my internship at Virtualenvi.</p>
 
-<h3>Programming Languages</h3>
-<ul>
-    <li>C</li>
-    <li>Python</li>
-    <li>Java (OOP)</li>
-</ul>
+        <div class="cards">
+            <div class="card">
+                <h3>🌐 HTML, CSS &amp; JavaScript</h3>
+                <p>Built a webpage using semantic HTML, styled it with CSS, and added interactivity using JavaScript and the DOM.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Responsive Design</h3>
+                <p>Used media queries so the site works on mobile, tablet and desktop screens using a mobile-first approach.</p>
+            </div>
+            <div class="card">
+                <h3>🔧 Git &amp; GitHub</h3>
+                <p>Created a repository, made commits, and pushed my code to GitHub for version control.</p>
+            </div>
+            <div class="card">
+                <h3>🚀 GitHub Pages</h3>
+                <p>Deployed this website live using GitHub Pages — from local files to a public URL.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 DNS, SSL &amp; HTTPS</h3>
+                <p>Learned how DNS translates domain names to IP addresses and how SSL certificates secure connections.</p>
+            </div>
+            <div class="card">
+                <h3>🐧 Linux Basics</h3>
+                <p>Practiced terminal commands on Ubuntu via VirtualBox: pwd, ls, cd, mkdir, touch.</p>
+            </div>
+        </div>
+    </div>
 
-<h3>Web Development</h3>
-<ul>
-    <li>Frontend: React, Tailwind CSS</li>
-    <li>Backend: Basic / Learning</li>
-</ul>
+    <hr>
 
-<h3>Database & Concepts</h3>
-<ul>
-    <li>SQL</li>
-    <li>DBMS</li>
-    <li>Data Structures & Algorithms (DSA)</li>
-</ul>
+    <div id="skills" class="section">
+        <h2>Skills</h2>
 
-<h3>Tools & Platforms</h3>
-<ul>
-    <li>Git</li>
-    <li>GitHub</li>
-    <li>VS Code</li>
-    <li>Google Colab</li>
-</ul>
+        <h3>Programming Languages</h3>
+        <ul>
+            <li>C</li>
+            <li>Python</li>
+            <li>Java (OOP)</li>
+        </ul>
 
-<h3>Other Tools</h3>
-<ul>
-    <li>MS Excel</li>
-    <li>MS Office</li>
-    <li>Linux</li>
-</ul>
+        <h3>Web Development</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript (learned this week)</li>
+            <li>Responsive Design with Media Queries</li>
+        </ul>
 
-    <h2>Interactive Section</h2>
+        <h3>Tools &amp; Platforms</h3>
+        <ul>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Chrome DevTools</li>
+            <li>GitHub Pages</li>
+            <li>Ubuntu / VirtualBox</li>
+        </ul>
 
-<button onclick="showMessage()">
-    Click Me
-</button>
-<button onclick="changeColor()">
-    Change Background
-</button>
-    <h2>Live Website</h2>
+        <h3>Database &amp; Concepts</h3>
+        <ul>
+            <li>SQL</li>
+            <li>DBMS</li>
+            <li>Data Structures &amp; Algorithms (DSA)</li>
+        </ul>
+    </div>
 
-<p>
-    <a href="https://sakshi-singh-dev.github.io/Virtualenvi_week1/" target="_blank">
-        Visit My Live Website
-    </a>
-</p>
-    <h2>Contact</h2>
-    <p>Email: sakshi.12402@stu.upes.ac.in</p>
+    <hr>
 
-    <p>
-        <a href="https://github.com/Sakshi-Singh-dev" target="_blank">
-    My GitHub Profile
-</a>
-    </p>
-<script src="script.js"></script>
+    <div id="interactive" class="section">
+        <h2>Interactive Section</h2>
+        <p>These buttons use JavaScript to change things on the page without reloading it.</p>
+
+        <div class="btn-row">
+            <button onclick="showMessage()">Say Hello 👋</button>
+            <button onclick="changeColor()">Change Background 🎨</button>
+            <button onclick="resetColor()">Reset</button>
+        </div>
+
+        <p id="message-box" class="message-box"></p>
+    </div>
+
+    <hr>
+
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sakshi.12402@stu.upes.ac.in">sakshi.12402@stu.upes.ac.in</a></p>
+        <p><a href="https://github.com/Sakshi-Singh-dev" target="_blank">GitHub Profile →</a></p>
+        <p><a href="https://github.com/Sakshi-Singh-dev/Virtualenvi_week1" target="_blank">Week 1 Repository →</a></p>
+    </div>
+
+    <footer>
+        <p>Sakshi Singh · Virtualenvi Internship · Week 1 · June 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
